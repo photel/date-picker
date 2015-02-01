@@ -81,6 +81,7 @@ $include-html-global-classes: $include-html-classes;
 
 // $row-width: rem-calc(1000);
 // $total-columns: 12;
+// $column-gutter: rem-calc(30);
 
 // $last-child-float: $opposite-direction;
 
@@ -93,8 +94,8 @@ $include-html-global-classes: $include-html-classes;
 // $font-family-monospace: Consolas, "Liberation Mono", Courier, monospace;
 
 // We use these to define default font weights
-// $font-weight-normal: normal;
-// $font-weight-bold: bold;
+$font-weight-normal: 400 !default;
+$font-weight-bold: 700 !default;
 
 // $white       : #FFFFFF;
 // $ghost       : #FAFAFA;
@@ -112,22 +113,28 @@ $include-html-global-classes: $include-html-classes;
 // $steel       : #666666;
 // $charcoal    : #555555;
 // $tuatara     : #444444;
-// $oil         : #333333;
+$oil        	: #3c4143;  //#333333;
 // $jet         : #222222;
 // $black       : #000000;
 
-// We use these as default colors throughout
-// $primary-color: #008CBA;
-// $secondary-color: #e7e7e7;
-// $alert-color: #f04124;
-// $success-color: #43AC6A;
-// $warning-color: #f08a24;
-// $info-color: #a0d3e8;
+$nav-bar		:	#3c4143;
+$title-bar		:	#383d3f;
+$new-smoke		:	#edeeed;
+$glacier		:	#76c2bb;
+$table-alt		:	#878c8c;
+$button-inset	:	#828282;
+$nu-black		:	#272727;
+$nu-black-ins	:	#505759;
+$pale-red		:	#e76e66;
+$tm-green		:	#36b55e;
+$found-blue		:	#008cba;
+$amber			: 	#f08a24;
 
 // We use these to control various global styles
-// $body-bg: $white;
-// $body-font-color: $jet;
-// $body-font-family: $font-family-sans-serif;
+$body-bg: $nu-black;
+$body-font-color: $new-smoke;
+$body-font-family: "Lato", "Open Sans", "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
+$second-font-family: "Bitter", "Courier", serif; //added by ph 13/10/2014
 // $body-font-weight: $font-weight-normal;
 // $body-font-style: normal;
 
@@ -839,7 +846,6 @@ $include-html-global-classes: $include-html-classes;
 // Off Canvas Menu Variables
 // $off-canvas-width: rem-calc(250);
 // $off-canvas-bg: $oil;
-// $off-canvas-bg-hover: scale-color($tabbar-bg, $lightness: -30%);
 
 // Off Canvas Menu List Variables
 // $off-canvas-label-padding: 0.3rem rem-calc(15);

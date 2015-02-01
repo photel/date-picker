@@ -3,7 +3,7 @@
 <html lang="en">
   <head>
     <meta charset="utf-8">
-    <title>tt######</title>
+    <title>DATEPICKER</title>
     <meta name="description" content="Port of bootstrap datepicker to Zurb Foundation framework">
     <meta name="author" content="Peter Beno, najlepsiwebdesigner@gmail.com">
     <!-- CDN -->
@@ -21,20 +21,20 @@
     <!-- foundation end -->
     <!-- foundation datepicker start -->
     <script src="js/foundation-datepicker.js"></script>
-    <link rel="stylesheet" href="stylesheets/foundation-datepicker.css">
+    <link rel="stylesheet" href="stylesheets/foundation-datepicker.css"> <!--  ++++ switch for scss file if problematic-->
     <!-- foundation datepicker end -->
     <link rel="stylesheet" href="stylesheets/example.css">
     <link rel="stylesheet" href="stylesheets/app.css" />
     <!--[if lt IE 9]>
       <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
     <![endif]-->
+    <link href='http://fonts.googleapis.com/css?family=Lato:400,700,900|Bitter:400,700' rel='stylesheet' type='text/css'>
   </head>
   <body>
     <div class="container">
       <div class="row">
         
         <div class="small-9 columns">
-          <h2>ssssaaaake!</h2>
           <p>Datepicker test</p>
           <div class="panel">
             <table class="table">
@@ -54,7 +54,7 @@
     </div>
     <script>
       $(function () {
-        window.prettyPrint && prettyPrint();
+       // window.prettyPrint && prettyPrint();
         $('#dp1').fdatepicker({
           format: 'mm-dd-yyyy'
         });
