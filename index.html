@@ -37,24 +37,29 @@
         <div class="small-9 columns">
           <p>Datepicker test</p>
           <div class="panel">
-            <table class="table">
+            <table class="tm-picker-section">
               <thead>
                 <tr>
-                  <th>Check in:
+                  <th>Start date:
                     <input type="text" class="span2" value="" id="dpd1" placeholder="Today">
                   </th>
-                  <th>Check out:
+                  <th>End date:
                     <input type="text" class="span2" value="" id="dpd2" placeholder="Tomorrow">
                   </th>
                 </tr>
               </thead>
             </table>
           </div>
-           
+        </div>
+      </div>
+
+
     </div>
+
+
+
     <script>
       $(function () {
-       // window.prettyPrint && prettyPrint();
         $('#dp1').fdatepicker({
           format: 'mm-dd-yyyy'
         });
@@ -89,12 +94,13 @@
           }
           $('#dp5').fdatepicker('hide');
         });
+
         // implementation of disabled form fields
         var nowTemp = new Date();
         var now = new Date(nowTemp.getFullYear(), nowTemp.getMonth(), nowTemp.getDate(), 0, 0, 0, 0);
         var checkin = $('#dpd1').fdatepicker({
           onRender: function (date) {
-            return date.valueOf() < now.valueOf() ? 'disabled' : '';
+            return date.valueOf() < now.valueOf() ? 'enabled' : '';
           }
         }).on('changeDate', function (ev) {
           if (ev.date.valueOf() > checkout.date.valueOf()) {

@@ -148,7 +148,7 @@ $second-font-family: "Bitter", "Courier", serif; //added by ph 13/10/2014
 // $last-child-float: $opposite-direction;
 
 // We use these to make sure border radius matches unless we want it different.
-// $global-radius: 3px;
+$global-radius: 3px;
 // $global-rounded: 1000px;
 
 // We use these to control inset shadow shiny edges and depressions.
@@ -641,9 +641,9 @@ $second-font-family: "Bitter", "Courier", serif; //added by ph 13/10/2014
 // $input-font-family: inherit;
 // $input-font-color: rgba(0,0,0,0.75);
 // $input-font-size: rem-calc(14);
-// $input-bg-color: $white;
-// $input-focus-bg-color: scale-color($white, $lightness: -2%);
-// $input-border-color: scale-color($white, $lightness: -20%);
+$input-bg-color: $nu-black;
+$input-focus-bg-color: scale-color($nu-black, $lightness: 10%);
+$input-border-color: none;
 // $input-focus-border-color: scale-color($white, $lightness: -40%);
 // $input-border-style: solid;
 // $input-border-width: 1px;
@@ -974,7 +974,7 @@ $second-font-family: "Bitter", "Courier", serif; //added by ph 13/10/2014
 // $include-html-panel-classes: $include-html-classes;
 
 // We use these to control the background and border styles
-// $panel-bg: scale-color($white, $lightness: -5%);
+$panel-bg: $nu-black-ins;
 // $panel-border-style: solid;
 // $panel-border-size: 1px;
 
@@ -1285,12 +1285,12 @@ $second-font-family: "Bitter", "Courier", serif; //added by ph 13/10/2014
 // These control the table cell border style
 // $table-border-style: solid;
 // $table-border-size: 1px;
-// $table-border-color: $gainsboro;
+$table-border-color: $button-inset;
 
 // These control the table head styles
-// $table-head-bg: $white-smoke;
+$table-head-bg: none;
 // $table-head-font-size: rem-calc(14);
-// $table-head-font-color: $jet;
+$table-head-font-color: $body-font-color;
 // $table-head-font-weight: $font-weight-bold;
 // $table-head-padding: rem-calc(8 10 10);
 
