@@ -1,7 +1,4 @@
 /* =========================================================
- * changes and additions Feb 2015 - PH
- * 
- * 
  * foundation-datepicker.js
  * Copyright 2013 Peter Beno, najlepsiwebdesigner@gmail.com, @benopeter
  * project website http://foundation-datepicker.peterbeno.com
