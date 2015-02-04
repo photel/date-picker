@@ -271,6 +271,24 @@
 			this.setValue();
 		},
 
+		//PH Add quickpick ranges
+		
+		// getLastSevenDays: function(){
+		// 	var today = new Date();
+		// 	var lastWeek = new Date(today.getFullYear(), today.getMonth(), today.getDate() - 7);
+		// 	return lastWeek;
+		// }
+
+		// setLastSevenDays: function(){
+		// 	var lastWeek = this.getLastSevenDays();
+		// 	var lastWeekMonth = lastWeek.getMonth() + 1;
+		// 	var lastWeekDay = lastWeek.getDate();
+		// 	var lastWeekYear = lastWeek.getFullYear();
+
+		// 	var lastWeekDisplay = ("00" + lastWeekDay.toString()).slice(-2)+ "/" + ("00" + lastWeekMonth .toString()).slice(-2)+ "/" + ("0000" + lastWeekYear .toString()).slice(-4);
+		// 	return lastWeekDisplay
+		// }
+
 		setValue: function() {
 			var formatted = this.getFormattedDate();
 			if (!this.isInput) {
